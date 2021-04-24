@@ -1,2 +1,2 @@
-cloudM =''
-cloudMpassword=''
+cloudM ='test'
+cloudMpassword='test123'
