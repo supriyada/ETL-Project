@@ -1,2 +1,2 @@
-cloudM ='supriyaDA'
-cloudMpassword='Priya1008'
+cloudM =''
+cloudMpassword=''
