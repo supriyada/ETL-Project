@@ -5,9 +5,9 @@ A main jupyter notebook is maintained and all the function to extract is called 
 
 ## Order of execution:
 > - Please provide the google API key in api_keys.py <br>
-> - Also provide mongodb cloud username & password in config.py <br>
+> - config.py has the test username & password with read-only access to mongo cloud database and collections.<br>
 > - api_calls --> this notebook calls the function to retreive data using youtube API key. I had stored the output I fetched into csv file. If you donot wish to run this, please proceed with next step.
-> - <strong> main_notebook</strong> --> this notebook calls all other notebook and does the loading part into db & cloud.
+> - <strong> main_notebook</strong> --> this notebook calls all other notebook and does the loading part into database & cloud. Since the scrapping data tends to change, this notebook also invokes API to collect the channel stats for the channels obtained from scrapping. It queries 100 rows through API.
 
 ## Datasets:
 The data for the statistics is collected from various resources. To short list the number channels to collect the statistics, channel ids are collected from the publicly available dataset & by web scrapping. They are as follows,<br>
@@ -49,7 +49,6 @@ URL: https://youtube.googleapis.com/youtube/v3/channels?part=snippet&part=statis
 
 ## SUMMARIZE:
 	The ETL is performed on the data. With the data from dataset [dataworld & Kaggle], API and web scrapping, channel Id are retrieved and with the help of that statistics of individual channel is obtained. <br>
-
-
+	
 
 
